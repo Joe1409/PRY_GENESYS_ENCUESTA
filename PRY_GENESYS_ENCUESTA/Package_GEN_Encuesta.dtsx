@@ -8,15 +8,188 @@
   DTS:DTSID="{AF8A10C5-E644-43B2-9BBA-E0C042E249B4}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.2000.121"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
   DTS:LocaleID="10250"
   DTS:ObjectName="Package_GEN_Encuesta"
   DTS:PackageType="5"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{4799AFFD-C5A5-4E9D-8071-9B17EF5894F2}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{DEF0A9C2-3431-47B0-98B7-186B8D450763}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C117E146-869E-4997-9556-654A87BF87FD}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::v_LocalFolderPathEncuesta] +"\\Encuesta.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\DATOS\PRY_GENESYS_ENCUESTA\PRY_GENESYS_ENCUESTA\CSV_Encuesta\Encuesta.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Id"
+              DTS:DTSID="{EB80B411-8B58-4059-A51B-55744C5A8053}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InteractionId"
+              DTS:DTSID="{9E460C4A-61DD-400C-81A7-A122F66FD829}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumeroDial"
+              DTS:DTSID="{A39F341B-C38E-4EC7-9213-04520A8D3E11}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="HoraInicio"
+              DTS:DTSID="{FBEA9B40-EACC-4EA1-8829-F1D3165A22CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreAgente"
+              DTS:DTSID="{EFF604AD-13D0-4C86-9208-343BC165EC7F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdAgente"
+              DTS:DTSID="{CE61D732-BCFD-41B7-87A2-AFCD2A87A247}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TipoEncuesta"
+              DTS:DTSID="{DBF1EA23-9F80-4F49-B376-5B32847A9782}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdPregunta"
+              DTS:DTSID="{64CCE219-4D5F-43C8-84F0-0C421F48B1DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TipoPregunta"
+              DTS:DTSID="{DA1ACA44-6F17-4E37-8566-F4434F5A8071}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pregunta"
+              DTS:DTSID="{F1C7BF06-0C25-4D9F-BFAD-175CA90AC7DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="255"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Respuesta"
+              DTS:DTSID="{DDD95B33-3B0F-4BA6-9B7D-010C426612EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aux1"
+              DTS:DTSID="{4CC5A590-FD9D-4A96-84E6-AC798237402D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aux2"
+              DTS:DTSID="{EB718CC5-4135-45D5-9E66-9B380EC16645}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aux3"
+              DTS:DTSID="{E3195D9B-6469-4A6A-B363-F5B14DDD4EC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aux4"
+              DTS:DTSID="{FEA4C0E2-864D-419C-97ED-401C7DE7A848}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aux5"
+              DTS:DTSID="{BFC37F38-D6D3-4E59-8BA6-2AE118EE59CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DateCreateRow"
+              DTS:DTSID="{A6EB94E0-1088-48E6-B0F7-AD913B9D172E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Conn_FTP]"
       DTS:CreationName="FTP"
@@ -32,7 +205,7 @@
             <DTS:Property
               DTS:Name="ServerPassword"
               Sensitive="1"
-              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfLgseWCA2kO1pqh58NmlNAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADXW/ZKzTnMFk4fLuX9GScQBtsbz0WKlMlroMRR3Sc8TQAAAAAOgAAAAAIAACAAAADcOyNJ9ISTRJot0rW+ofkx1oG9vkqNKEYUotQt8G4zECAAAACn1YedCEQHnTDGri+UIJsWGXUa4in0sSTX1QcLMugAP0AAAAAirsB3EG8lerDMyuLAF4L1l2NGk3FrllaE5jCvPU6IhEL+OpeHr+4aoowNVuLeo5waLqalry/ROWNYnKf/FEdk</DTS:Property>
+              Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANdd4Y9iAPky33DWbamQQPAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADataoXnmAFuNceCHUbzfRaTYWWvZs7CzBSnbA6dsJwEAAAAAAOgAAAAAIAACAAAACkbE/tZbhaMXT0OfUq7beuzZtyboHgEqA0IsmkF4DP9yAAAAAVuJUkJYOZh6hn+UHGlvo9aMj8sE+v4yQ+wqRZUHFlrkAAAABWH2km3wE0vyG82jUvcgDOBTzC6tMaeEnV1ZDmBH5BVHh+/h8nNCriIWuV1b9iFPaG/XqwxOIKEzb8v+Pv2Zde</DTS:Property>
           </DTS:FtpConnection>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
@@ -48,7 +221,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfLgseWCA2kO1pqh58NmlNAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADYdhiHiXRBLJ6jdWtHoF+fIrQ05GlPMBbPY44RnO9CRwAAAAAOgAAAAAIAACAAAACxS1PiZVdAh5YDBoIHp0c4MHkyY3RRn3YFM/bGGn3VeiAAAAAznAqNdPbg5xcV7TE1fncuEMm/k7Hzs3Ooj5XEZy2WPkAAAABMUFzeqC5agtb4jf9BXv3sPGEzM8jD6xKS4w5pr5xCJ3cDkG2C6604ozG28OfkBzfZHBmGQmKaozNSoHO3A1Fc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANdd4Y9iAPky33DWbamQQPAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC3Rys6PPKrTfuVsndHly22JfucOfxgx//VvTzf1kpnqQAAAAAOgAAAAAIAACAAAAC4Dv4BEHy8Neb/GEVg+hSnNaxk6+66F4cXHOBqZIJtsSAAAABp3cWp7GDv32h/FCJq35FIa4xOydjycjGzMmVSnMMpe0AAAACOMgvSO/MlOrpjwPnSevKLZYGsZ0qYlu5+lkDVA78SQ03mVNGQ7IFD4FkBtI1iKTmM5yWVRHCTbunh9hAeZI5R</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +236,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfLgseWCA2kO1pqh58NmlNAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABWlwXtGI3AhVWwsPXqHys+idWBx/zX6Tq3Ldp4ckWjTQAAAAAOgAAAAAIAACAAAACrn74l6Zl11rVg2aJIvOO9hKpPShzKLfPuiFbO1gUNqSAAAADPlYuekW77MbG81XkfBCobsUuEBZOX1G3yCGUpnCrII0AAAABNUx8z2pLgVgevllVHjSS7zIsbmPmj8b6vb0vsjfi68oo0kGnP2/9h1WuCY1H2MJPvT9Iq3pDqKf9fcq4aa7ON</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANdd4Y9iAPky33DWbamQQPAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABUH4+zD/oQEDHlwGp9uj+jhKdRr1LV9ezUeXde3fvYQAAAAAAOgAAAAAIAACAAAABC1YvcOmiu2wz1EahX7heQr/4uEkiBKYEwTiYw0pZHeiAAAADMokfkCR+6MqrVX1sIA7E6ODc817g9hHiTVX0ohbmODEAAAACSWtYWR8WF8wxOCU6YZ4GtAhN/WQzYV1wYWnzPDOqOi4ZCeuoGhdCnFUorSNYGTCeNZybEj83HnbnLGp7eCsuP</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -294,6 +467,715 @@
     </DTS:SelectedLogProviders>
   </DTS:LoggingOptions>
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Contenedor de secuencias"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{C83B82AE-5FC6-4A30-A181-73530B7C97B3}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Contenedor de secuencias">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{FD2B428E-D5C1-4CD5-B4D7-B7FA3662508F}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT Generacion de archivo Survey"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="10250"
+                  name="Archivo final Survey"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[Id]"
+                          cachedDataType="i4"
+                          cachedName="Id"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Id]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Id]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[InteractionId]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="InteractionId"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[InteractionId]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[InteractionId]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[NumeroDial]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="NumeroDial"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[NumeroDial]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[NumeroDial]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[HoraInicio]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="HoraInicio"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[HoraInicio]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[HoraInicio]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[NombreAgente]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="NombreAgente"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[NombreAgente]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[NombreAgente]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[IdAgente]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="IdAgente"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[IdAgente]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[IdAgente]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[TipoEncuesta]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="TipoEncuesta"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[TipoEncuesta]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[TipoEncuesta]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[IdPregunta]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="IdPregunta"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[IdPregunta]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[IdPregunta]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[TipoPregunta]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="TipoPregunta"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[TipoPregunta]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[TipoPregunta]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[Pregunta]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Pregunta"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Pregunta]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Pregunta]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[Respuesta]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="Respuesta"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Respuesta]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Respuesta]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[Aux1]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Aux1"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux1]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux1]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[Aux2]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Aux2"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux2]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux2]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[Aux3]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Aux3"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux3]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux3]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[Aux4]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Aux4"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux4]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux4]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[Aux5]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Aux5"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux5]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux5]" />
+                        <inputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].Columns[DateCreateRow]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="DateCreateRow"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[DateCreateRow]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[DateCreateRow]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Id]"
+                          dataType="i4"
+                          name="Id" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[InteractionId]"
+                          dataType="wstr"
+                          length="200"
+                          name="InteractionId" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[NumeroDial]"
+                          dataType="wstr"
+                          length="200"
+                          name="NumeroDial" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[HoraInicio]"
+                          dataType="wstr"
+                          length="200"
+                          name="HoraInicio" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[NombreAgente]"
+                          dataType="wstr"
+                          length="255"
+                          name="NombreAgente" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[IdAgente]"
+                          dataType="wstr"
+                          length="200"
+                          name="IdAgente" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[TipoEncuesta]"
+                          dataType="wstr"
+                          length="200"
+                          name="TipoEncuesta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[IdPregunta]"
+                          dataType="wstr"
+                          length="200"
+                          name="IdPregunta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[TipoPregunta]"
+                          dataType="wstr"
+                          length="200"
+                          name="TipoPregunta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Pregunta]"
+                          dataType="wstr"
+                          length="255"
+                          name="Pregunta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Respuesta]"
+                          dataType="wstr"
+                          length="255"
+                          name="Respuesta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux1]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux1" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux2]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux2" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux3]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux3" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux4]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux4" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[Aux5]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux5" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input].ExternalColumns[DateCreateRow]"
+                          dataType="dbTimeStamp"
+                          name="DateCreateRow" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+                  description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+                  name="Lectura de tabla GenesysCloudControlAPi_Survey"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                      name="AllowImplicitStringConversion">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Nombre de la tabla de la base de datos de origen."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."GenesysCloudControlAPi_Survey"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especificar el modo de recuperar información de columnas externas"
+                      name="AccessMode"
+                      typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Connections[IDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Conn_Genesys]"
+                      connectionManagerRefId="Package.ConnectionManagers[Conn_Genesys]"
+                      description="Administrador de conexiones administrado"
+                      name="IDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET]"
+                      name="Salida de origen de ADO NET">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Id]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Id]"
+                          name="Id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[InteractionId]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[InteractionId]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[InteractionId]"
+                          name="InteractionId"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[NumeroDial]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[NumeroDial]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[NumeroDial]"
+                          name="NumeroDial"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[HoraInicio]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[HoraInicio]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[HoraInicio]"
+                          name="HoraInicio"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[NombreAgente]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[NombreAgente]"
+                          length="255"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[NombreAgente]"
+                          name="NombreAgente"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[IdAgente]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[IdAgente]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[IdAgente]"
+                          name="IdAgente"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[TipoEncuesta]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[TipoEncuesta]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[TipoEncuesta]"
+                          name="TipoEncuesta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[IdPregunta]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[IdPregunta]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[IdPregunta]"
+                          name="IdPregunta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[TipoPregunta]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[TipoPregunta]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[TipoPregunta]"
+                          name="TipoPregunta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Pregunta]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Pregunta]"
+                          length="255"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Pregunta]"
+                          name="Pregunta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Respuesta]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Respuesta]"
+                          length="255"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Respuesta]"
+                          name="Respuesta"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux1]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux1]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux1]"
+                          name="Aux1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux2]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux2]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux2]"
+                          name="Aux2"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux3]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux3]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux3]"
+                          name="Aux3"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux4]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux4]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux4]"
+                          name="Aux4"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux5]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux5]"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[Aux5]"
+                          name="Aux5"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[DateCreateRow]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversión"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[DateCreateRow]"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].Columns[DateCreateRow]"
+                          name="DateCreateRow"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Id]"
+                          dataType="i4"
+                          name="Id" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[InteractionId]"
+                          dataType="wstr"
+                          length="200"
+                          name="InteractionId" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[NumeroDial]"
+                          dataType="wstr"
+                          length="200"
+                          name="NumeroDial" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[HoraInicio]"
+                          dataType="wstr"
+                          length="200"
+                          name="HoraInicio" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[NombreAgente]"
+                          dataType="wstr"
+                          length="255"
+                          name="NombreAgente" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[IdAgente]"
+                          dataType="wstr"
+                          length="200"
+                          name="IdAgente" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[TipoEncuesta]"
+                          dataType="wstr"
+                          length="200"
+                          name="TipoEncuesta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[IdPregunta]"
+                          dataType="wstr"
+                          length="200"
+                          name="IdPregunta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[TipoPregunta]"
+                          dataType="wstr"
+                          length="200"
+                          name="TipoPregunta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Pregunta]"
+                          dataType="wstr"
+                          length="255"
+                          name="Pregunta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Respuesta]"
+                          dataType="wstr"
+                          length="255"
+                          name="Respuesta" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux1]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux1" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux2]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux2" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux3]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux3" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux4]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux4" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[Aux5]"
+                          dataType="wstr"
+                          length="200"
+                          name="Aux5" />
+                        <externalMetadataColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET].ExternalColumns[DateCreateRow]"
+                          dataType="dbTimeStamp"
+                          name="DateCreateRow" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET]"
+                      isErrorOut="true"
+                      name="Salida de error de origen de ADO NET">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Id]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Id]"
+                          name="Id" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[InteractionId]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[InteractionId]"
+                          name="InteractionId" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[NumeroDial]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[NumeroDial]"
+                          name="NumeroDial" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[HoraInicio]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[HoraInicio]"
+                          name="HoraInicio" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[NombreAgente]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[NombreAgente]"
+                          name="NombreAgente" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[IdAgente]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[IdAgente]"
+                          name="IdAgente" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[TipoEncuesta]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[TipoEncuesta]"
+                          name="TipoEncuesta" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[IdPregunta]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[IdPregunta]"
+                          name="IdPregunta" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[TipoPregunta]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[TipoPregunta]"
+                          name="TipoPregunta" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Pregunta]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Pregunta]"
+                          name="Pregunta" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Respuesta]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Respuesta]"
+                          name="Respuesta" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux1]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux1]"
+                          name="Aux1" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux2]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux2]"
+                          name="Aux2" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux3]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux3]"
+                          name="Aux3" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux4]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux4]"
+                          name="Aux4" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux5]"
+                          dataType="wstr"
+                          length="200"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[Aux5]"
+                          name="Aux5" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[DateCreateRow]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[DateCreateRow]"
+                          name="DateCreateRow" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey.Paths[Salida de origen de ADO NET]"
+                  endId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey.Inputs[Flat File Destination Input]"
+                  name="Salida de origen de ADO NET"
+                  startId="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey.Outputs[Salida de origen de ADO NET]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Log Fin de Ejecución - Ejecución Exitosa"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
@@ -545,12 +1427,20 @@
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
       DTS:CreationName=""
-      DTS:DTSID="{28B280AE-2D9C-4F87-946F-6A64E224C564}"
+      DTS:DTSID="{6E8EC1AC-A1E6-4C11-87BC-A66FD9BF3353}"
       DTS:From="Package\Log Inicio de Ejecución"
       DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Contenedor de secuencias" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{E6F6F5F0-4562-4BF1-B872-0F8FCDE4C802}"
+      DTS:From="Package\Contenedor de secuencias"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
       DTS:To="Package\Log Fin de Ejecución - Ejecución Exitosa" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
@@ -590,36 +1480,6 @@
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadOnlyVariables="System::ErrorCode,System::ErrorDescription,System::PackageName,System::StartTime,User::v_EmailFrom,User::v_EmailPassword,User::v_EmailPort,User::v_EmailServer,User::v_EmailTo,User::v_EmailUserName">
-              <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_98d1ec56638e441cbf98e98c3cabfa7e")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_98d1ec56638e441cbf98e98c3cabfa7e")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -739,6 +1599,35 @@ using System.Runtime.CompilerServices;
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_98d1ec56638e441cbf98e98c3cabfa7e.Properties.Settings.get_Default():ST_98d1ec56638e441cbf98e98c3cabfa7e.Properties.Sett" +
+    "ings")]
+
+namespace ST_98d1ec56638e441cbf98e98c3cabfa7e.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ST_c58f629af2f74cb0967abd85c02c0b2b.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{f26050a9-b30a-4374-993f-1ce54c5a6675}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>ST_98d1ec56638e441cbf98e98c3cabfa7e</RootNamespace><AssemblyName>ST_c58f629af2f74cb0967abd85c02c0b2b</AssemblyName><TargetFrameworkVersion>v4.7</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch><TargetFrameworkProfile></TargetFrameworkProfile></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="ScriptTask" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" /><Host Name="ScriptTask" GeneratedNamespace="$safeprojectname" IconIndex=""></Host><ProjectClient><HostIdentifier>SSIS_ST150</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
@@ -917,34 +1806,35 @@ namespace ST_98d1ec56638e441cbf98e98c3cabfa7e
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_98d1ec56638e441cbf98e98c3cabfa7e")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_98d1ec56638e441cbf98e98c3cabfa7e")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_98d1ec56638e441cbf98e98c3cabfa7e.Properties.Settings.get_Default():ST_98d1ec56638e441cbf98e98c3cabfa7e.Properties.Sett" +
-    "ings")]
-
-namespace ST_98d1ec56638e441cbf98e98c3cabfa7e.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -1210,51 +2100,96 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </DTS:EventHandler>
   </DTS:EventHandlers>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
-<!--If you manually edit this section and make a mistake, you can delete it. -->
-<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
 <Objects
   Version="8">
-  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="278,42"
+          Size="278.4,41.6"
           Id="Package\Log Fin de Ejecución - Ejecución Exitosa"
           TopLeft="575,562" />
         <NodeLayout
-          Size="192,42"
+          Size="192,41.6"
           Id="Package\Log Inicio de Ejecución"
           TopLeft="626,84" />
+        <NodeLayout
+          Size="240.8,41.6"
+          Id="Package\Contenedor de secuencias\DFT Generacion de archivo Survey"
+          TopLeft="47.0666405730789,19.2666696490182" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="292.8,116"
+          Size="292.8,159.2"
+          Id="Package\Contenedor de secuencias"
+          TopLeft="541.666645142768,251.333335330751" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="722,126">
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="722,125.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-8,436"
+              EndConnector="-77.9333548572318,125.733335330751"
               Start="0,0"
-              End="-8,428.5">
+              End="-77.9333548572318,118.233335330751">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,214" />
+                    End="0,58.8666676653756" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,214"
-                    Point2="0,218"
-                    Point3="-4,218" />
+                    Point1="0,58.8666676653756"
+                    Point2="0,62.8666676653756"
+                    Point3="-4,62.8666676653756" />
                   <mssgle:LineSegment
-                    End="-4,218" />
+                    End="-73.9333548572318,62.8666676653756" />
                   <mssgle:CubicBezierSegment
-                    Point1="-4,218"
-                    Point2="-8,218"
-                    Point3="-8,222" />
+                    Point1="-73.9333548572318,62.8666676653756"
+                    Point2="-77.9333548572318,62.8666676653756"
+                    Point3="-77.9333548572318,66.8666676653756" />
                   <mssgle:LineSegment
-                    End="-8,428.5" />
+                    End="-77.9333548572318,118.233335330751" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="644.066645142768,410.533335330751">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="70.1333548572319,151.466664669249"
+              Start="0,0"
+              End="70.1333548572319,143.966664669249">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.7333323346244" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,71.7333323346244"
+                    Point2="0,75.7333323346244"
+                    Point3="4,75.7333323346244" />
+                  <mssgle:LineSegment
+                    End="66.1333548572319,75.7333323346244" />
+                  <mssgle:CubicBezierSegment
+                    Point1="66.1333548572319,75.7333323346244"
+                    Point2="70.1333548572319,75.7333323346244"
+                    Point3="70.1333548572319,79.7333323346244" />
+                  <mssgle:LineSegment
+                    End="70.1333548572319,143.966664669249" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1270,7 +2205,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package.EventHandlers[OnError]">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="238,42"
           Id="Package.EventHandlers[OnError]\Envía Correo - Error en Package"
@@ -1298,11 +2233,59 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
+  <TaskHost
+    design-time-name="Package\Contenedor de secuencias\DFT Generacion de archivo Survey">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="312,41.6"
+          Id="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey"
+          TopLeft="184.999992648761,241.800001921654" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Archivo final Survey"
+          TopLeft="595.833309657045,240.933335248099" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias\DFT Generacion de archivo Survey.Paths[Salida de origen de ADO NET]"
+          TopLeft="496.999992648761,262.166668584877">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98.8333170082842,0"
+              Start="0,0"
+              End="91.3333170082842,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="91.3333170082842,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de secuencias\DFT Generacion de archivo Survey\Lectura de tabla GenesysCloudControlAPi_Survey">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
