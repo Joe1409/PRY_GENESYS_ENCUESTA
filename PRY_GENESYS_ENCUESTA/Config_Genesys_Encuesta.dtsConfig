@@ -7,15 +7,11 @@
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[Password]" ValueType="String"><ConfiguredValue>CRM1ooY020#</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[ServerName]" ValueType="String"><ConfiguredValue>172.36.0.23</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[UserName]" ValueType="String"><ConfiguredValue>ISINTCRMCOM</ConfiguredValue></Configuration>
-<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_REPINTETL].Properties[InitialCatalog]" ValueType="String"><ConfiguredValue>REPINTETL</ConfiguredValue></Configuration>
-<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_REPINTETL].Properties[Password]" ValueType="String"><ConfiguredValue>CRM1ooY020#</ConfiguredValue></Configuration>
-<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_REPINTETL].Properties[ServerName]" ValueType="String"><ConfiguredValue>172.36.0.23</ConfiguredValue></Configuration>
-<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_REPINTETL].Properties[UserName]" ValueType="String"><ConfiguredValue>Isintcrmcom</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Log_Package_GEN_Encuesta.log].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>C:\DATOS\PRY_GENESYS_ENCUESTA\PRY_GENESYS_ENCUESTA\Logs\Log_Package_GEN_Encuesta.log</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_EmailPassword].Properties[Value]" ValueType="String"><ConfiguredValue>Tgv#6*3=21#.G8xrPC</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_EmailPort].Properties[Value]" ValueType="String"><ConfiguredValue>25</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_EmailServer].Properties[Value]" ValueType="String"><ConfiguredValue>smtp.office365.com</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_EmailUserName].Properties[Value]" ValueType="String"><ConfiguredValue>powerbicrmprod@upc.pe</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_FtpFolderPathEncuesta].Properties[Value]" ValueType="String"><ConfiguredValue>/LeadDigitalUPN_Resultado/</ConfiguredValue></Configuration>
-<Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_LocalFolderPathEncuesta].Properties[Value]" ValueType="String"><ConfiguredValue>C:\DATOS\PRY_GENESYS_ENCUESTA\PRY_GENESYS_ENCUESTA\CSV_Encuesta</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_LocalFolderPathEncuesta].Properties[Value]" ValueType="String"><ConfiguredValue>C:\DATOS\PRY_GENESYS_ENCUESTA\PRY_GENESYS_ENCUESTA\CSV_Encuesta\</ConfiguredValue></Configuration>
 </DTSConfiguration> 
