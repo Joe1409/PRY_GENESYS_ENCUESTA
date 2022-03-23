@@ -12,6 +12,6 @@
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_EmailPort].Properties[Value]" ValueType="String"><ConfiguredValue>25</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_EmailServer].Properties[Value]" ValueType="String"><ConfiguredValue>smtp.office365.com</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_EmailUserName].Properties[Value]" ValueType="String"><ConfiguredValue>powerbicrmprod@upc.pe</ConfiguredValue></Configuration>
-<Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_FtpFolderPathEncuesta].Properties[Value]" ValueType="String"><ConfiguredValue>/LeadDigitalUPN_Resultado/</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_FtpFolderPathEncuesta].Properties[Value]" ValueType="String"><ConfiguredValue>/Reportes/Encuesta_Satisfaccion/</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_LocalFolderPathEncuesta].Properties[Value]" ValueType="String"><ConfiguredValue>C:\DATOS\PRY_GENESYS_ENCUESTA\PRY_GENESYS_ENCUESTA\CSV_Encuesta\</ConfiguredValue></Configuration>
 </DTSConfiguration> 
