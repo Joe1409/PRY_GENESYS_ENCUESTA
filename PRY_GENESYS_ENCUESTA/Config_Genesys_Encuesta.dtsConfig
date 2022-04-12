@@ -1,11 +1,11 @@
 <?xml version="1.0"?><DTSConfiguration><DTSConfigurationHeading><DTSConfigurationFileInfo GeneratedBy="AzureAD\JosephyAvila" GeneratedFromPackageName="Package" GeneratedFromPackageID="{AF8A10C5-E644-43B2-9BBA-E0C042E249B4}" GeneratedDate="6/09/2021 11:22:40"/></DTSConfigurationHeading>
-<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_FTP].Properties[ServerName]" ValueType="String"><ConfiguredValue>10.10.0.244</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_FTP].Properties[ServerName]" ValueType="String"><ConfiguredValue>10.10.2.8</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_FTP].Properties[ServerPassword]" ValueType="String"><ConfiguredValue>UpcCrm2018$#</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_FTP].Properties[ServerPort]" ValueType="Int32"><ConfiguredValue>21</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_FTP].Properties[ServerUserName]" ValueType="String"><ConfiguredValue>usrftpcrmavaya</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[InitialCatalog]" ValueType="String"><ConfiguredValue>GENESYS</ConfiguredValue></Configuration>
-<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[Password]" ValueType="String"><ConfiguredValue>CRM1ooY020#</ConfiguredValue></Configuration>
-<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[ServerName]" ValueType="String"><ConfiguredValue>172.36.0.23</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[Password]" ValueType="String"><ConfiguredValue>glt$4lS_l9H#g$pr2</ConfiguredValue></Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[ServerName]" ValueType="String"><ConfiguredValue>SVRPRDCRMCALCOM</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Conn_Genesys].Properties[UserName]" ValueType="String"><ConfiguredValue>ISINTCRMCOM</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Connections[Log_Package_GEN_Encuesta.log].Properties[ConnectionString]" ValueType="String"><ConfiguredValue>C:\DATOS\PRY_GENESYS_ENCUESTA\PRY_GENESYS_ENCUESTA\Logs\Log_Package_GEN_Encuesta.log</ConfiguredValue></Configuration>
 <Configuration ConfiguredType="Property" Path="\Package.Variables[User::v_EmailPassword].Properties[Value]" ValueType="String"><ConfiguredValue>Tgv#6*3=21#.G8xrPC</ConfiguredValue></Configuration>
